@@ -1,0 +1,21 @@
+설치할거 git, 소스트리
+
+workspace 폴더 만들고 우클릭 -> git bash
+
+[명령어 입력]
+1. git init
+
+2. git remote add main(or master) (깃주소)
+
+3. git remote -v		//push, pull 상태 보는거?
+
+[sourceTree]
+1. <add> -> workspace폴더 지정
+
+2. <pull>
+깃에있는 데이터 로컬에 받음
+
+3. <commint>
+커밋 -> 커밋할파일 올리고 -> {커밋}
+
+4. [push]

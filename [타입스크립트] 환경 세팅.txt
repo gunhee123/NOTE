@@ -1,0 +1,23 @@
+[타입스크립트]
+개발환경 세팅
+
+workspace 폴더 생성 후 VSCode에서 오픈
+(1. Node.js 설치)
+1. npm 설치		//(Node Pakage manager) : 패키지를 편하게 관리할 수 있게 해줌
+
+2. package.json 설치
+ -> npm init -y		//NPM 설정 파일을 기본값으로 생성
+
+3. 타입스크립트 설치
+ -> npm install -g typescript	(or/ npm install typescript -D)
+
+[참고](https://joshua1988.github.io/webpack-guide/build/node-npm.html#npm)
+
+4. TS -> JS 컴파일
+node ./node_modules/typescript/bin/tsc (파일명).ts
+//npx tsc	//tS -> JS로 컴파일시키는 명령어
+//npx tsc -w	//자동으로 수정적용시킴 (근데 안됨)
+
+
+
+
