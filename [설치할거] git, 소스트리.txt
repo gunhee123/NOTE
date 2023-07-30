@@ -19,3 +19,7 @@ workspace 폴더 만들고 우클릭 -> git bash
 커밋 -> 커밋할파일 올리고 -> {커밋}
 
 4. [push]
+
+
+[greenprojectToken] (30)일 (today: 2023/07/30)
+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
