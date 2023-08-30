@@ -1,0 +1,8 @@
+[vscode]
+ctrl + d		//같은 문장 선택
+
+[eclips]
+alt + shift + d		//다중선택
+
+메서드위에 포커스 + alt + shift + j		//메서드 설명 주석 자동 생성
+

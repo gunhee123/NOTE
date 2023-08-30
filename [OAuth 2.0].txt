@@ -1,0 +1,24 @@
+[OAuth 2.0]
+(Open Authorization 2.0, OAuth2) 인증을 위한 개방형 표준 프로토콜
+- 이 프로토콜에서는 Third-Party 프로그램에게 리소스 소유자를 대신하여 리소스 서버에서 제공하는 자원에 대한 접근 권ㄴ한을 위힘하는 방식을 제공
+
+-> 구글, 페이스북, 카카오, 네이버 등에서 제공하는 **간편로그인** 기능
+
+[주요 용어]
+Authentication	//인증, 증명	--> 인증, 접근 자격이 있는지 검증하는 단계
+Authorization	//허가		--> 
+Access Token	//입장, 접속하다	--> 리소스 서버에게서 리소스 소유자의 보호된 자원을 획득할 때 사용되는 만료 기간이 있는 Token
+Refresh Token	//		--> Access Token 만료시 이를 갱신하기 위한 용도로 사용하는 Token
+				    일바적으로 Access Token보다 만료 기간이 김
+
+[역할]
+Resource Owner	//리소스 소유자 또는 사용자. 보호된 자원에 접근할 수 있는 자격을 부여해 주는 주체
+Client		//보호된 자원을 사용하려고 접근 요청을 하는 애플리케이션
+Resource Server	//사용자의 보호된 자원을 호스팅하는 서버
+Authorization Server	//권한 서버. 인증/인가를 수행하는 서버로 클라이언트의 접근 자격을 확인하고 Access Token을 발급하여 권한을 부여하는 역할을 수행
+
+[Obtaining Authorization 4가지 종류]	//취득 허가
+1. Authorization Code Grant	//권한 부여 승인 코드 방식
+2. Implicit Grant	//암묵적 승인 방식
+3. Resource Owner Password Credentials Grant	//자원 소유자 자격증명 승인 방식
+4. Client Credentials Grant	//클라이언트 자격증명 승인 방식

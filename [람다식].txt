@@ -1,0 +1,15 @@
+[람다식] / 자바 8버전 이상 지원
+```
+MathOperation addition = new MathOperation() {
+    @Override
+    public int operate(int a, int b) {
+        return a + b;
+    }
+};
+```
+
+위의 코드를 람다식으로 변경하면 아래의 코드 처럼 변경 가능
+```
+MathOperation addition = (int a, int b) -> a + b;
+```
+
