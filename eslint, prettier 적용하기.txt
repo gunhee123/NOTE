@@ -1,0 +1,67 @@
+eslint, prettier 적용하기 (TS)
+
+
+1. settings.json 파일 최상단에 아래 코드를 넣어준다.
+
+// settings.json
+{
+    "eslint.validate": [               // 검사해야 하는 언어를 ESLint 확장에 알려줍니다.
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        // "html",  // 삭제
+        "vue",
+        "markdown"
+    ],
+    "editor.codeActionsOnSave": {               // VS Code의 저장 이벤트에 대한 훅입니다.
+        "source.fixAll.eslint": true            // 저장 중인 파일의 문제를 수정하라는 메시지가 표시됩니다.
+    },
+    "editor.tabSize": 2,
+}
+
+
+
+2. prettierrc.json 파일에 아래 코드를 넣어준다.
+
+// 쌍따옴표 대신 홑따옴표 사용
+  "singleQuote": true,
+  // 모든 구문 끝에 세미콜론 출력
+  "semi": true,
+  // 탭 대신 공백으로 들여쓰기
+  "useTabs": false,
+  // 들여쓰기 공백 수
+  "tabWidth": 2,
+  // 가능하면 후행 쉼표 사용
+  "trailingComma": "all",
+  // 줄 바꿈할 길이
+  "printWidth": 80,
+  // 객체 괄호에 공백 삽입
+  "bracketSpacing": true,
+  // 항상 화살표 함수의 매개 변수를 괄호로 감쌈
+  "arrowParens": "always",
+  // OS에 따른 코드라인 끝 처리 방식 사용
+  "endOfLine": "auto"
+
+주석은 제거하도록하자.
+
+
+3. .eslintrc.js 파일에 아래 코드를 넣어준다.
+
+module.exports = {
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier'
+    ],
+    parser: '@typescript-eslint/parser',
+    plugins: [
+        '@typescript-eslint',
+        'prettier'
+    ],
+    rules: {
+        'prettier/prettier': 'error',
+        'max-depth': ['error', 2],
+        'max-params': ['error', 3],
+    },
+};
