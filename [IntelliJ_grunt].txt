@@ -1,0 +1,6 @@
+[IntelliJ_grunt]
+우측 상단에 망치모양(프로젝트 빌드) 옆에 구성편집
+ -> Shell Script 추가
+ -> 스크립트 텍스트: grunt
+ -> 작업 디렉터리: index.html이 있는 디렉토리
+ -> 터미널에서 실행 체크

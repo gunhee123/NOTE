@@ -1,0 +1,24 @@
+[INTELLIJ 단축키]
+
+파일찾기  ->	CTRL + SHIFT + N    or    SHIFT + SHIFT
+
+줄 복사     ->	CTRL + D
+줄 삭제    ->	CTRL + Y
+
+최근파일열기 ->	CTRL + E
+
+창닫기 ->	CTRL + F4
+
+
+
+
+다중 선택(마우스) ->	ALT + SHIFT + 클릭
+다중 선택(키보드) -> 	CTRL + CTRL + 위/아래 방향키
+
+같은단어선택 ->	ALT + J
+같은단어전체선택 ->	CTRL + ALT + SHIFT + J
+
+선택한범위에서 검색 -> 영역드래그 + CTRL + F
+
+
+
